@@ -1,0 +1,85 @@
+# =============================================================================
+# .gitignore — guides d'infrastructure (homelab)
+# =============================================================================
+
+# --- Secrets et identifiants (NE JAMAIS COMMITER) ----------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.kdbx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.ppk
+*.gpg
+*.asc
+secrets.*
+credentials*
+.htpasswd
+htpasswd.users
+web.yml
+*.password
+.zabbix_db_credentials
+
+# --- Sauvegardes, dumps et archives (souvent volumineux ou sensibles) --------
+*.sql
+*.sql.gz
+*.dump
+*.bak
+*.backup
+*.gz
+*.tgz
+*.tar
+*.zip
+*.7z
+*.rar
+
+# --- Images disque, ISO et machines virtuelles -------------------------------
+*.iso
+*.img
+*.vhd
+*.vhdx
+*.vmdk
+*.vdi
+*.qcow2
+*.ova
+*.ovf
+
+# --- Rapports et logs générés ------------------------------------------------
+*.log
+rapport_odoo.html
+logs/
+
+# --- Dépendances et caches ---------------------------------------------------
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+.pytest_cache/
+
+# --- Fichiers temporaires et de l'éditeur ------------------------------------
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Fichiers système (Windows / macOS / Linux) ------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.Trash-*
